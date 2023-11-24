@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,39 +9,60 @@
 </head>
 
 <body>
-        
-    
-        <form class="surveyform">
+    <main>
+        <form class="survey-form">
             <h1>Customer Survey Form</h1>
-            <label>First Name</label>
-            <input type="text">
-            <label>Last Name</label>
-            <input type="text">
-            <label>Email</label>
-            <input type="email">
-            <label>Date of Birth</label>
-            <input type="date">
-            <label>Country</label>
-            <select>
-                <option value="india">India</option>
-                <option value="england">England</option>
-                <option value="america">America</option>
-                <option value="pakistan">Pakistan</option>
-            </select>
-            <label>Gender:</label>
-            <label><input type="radio" name="gender" value="male"> Male</label>
-            <label><input type="radio" name="gender" value="female"> Female</label>
-            <label><input type="radio" name="gender" value="other"> Other</label>
-            <label>Profession</label>
-            <input type="text">
-            <label>Mobile No.</label>
-            <input type="tel">
-            <button type="button">Submit</button>
-            <button type="button">Reset</button>
-
+            <div class="form-element input-name">
+                <div class="first">
+                    <label>First Name</label>
+                    <input type="text" required>
+                </div>
+                <div class="last">
+                    <label>Last Name</label>
+                    <input type="text" required>
+                </div>
+            </div>
+            <div class="form-element input-email">
+                <label>Email</label>
+                <input type="email" required>
+            </div>
+            <div class="form-element input-dob">
+                <label>Date of Birth</label>
+                <input type="date" required>
+            </div>
+            <div class="form-element input-country">
+                <label>Country</label>
+                <select required>
+                    <option value="india">India</option>
+                    <option value="england">England</option>
+                    <option value="america">America</option>
+                    <option value="pakistan">Pakistan</option>
+                </select>
+            </div>
+            <div class="form-element input-gender">
+                <label>Gender:</label>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </div>
+            <div class="form-element input-profession">
+                <label>Profession</label>
+                <input type="text">
+            </div>
+            <div class="form-element input-mobile">
+                <label>Mobile No.</label>
+                <input type="tel">
+            </div>
+            <div class="form-element form-buttons">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
         </form>
-    
+    </main>
 
+
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
